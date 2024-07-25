@@ -17,7 +17,16 @@ Django para hacer sitios web con Python. React para construir interfaces de usua
 
 
 1er Parcial:
-000-Examen Diagnostico-Resolución de un algoritmo
+#Conceptos teoricos
+0-Examen Diagnostico-Resolución de un algoritmo
+01-Interfaz de VS Code
+02-Intefaz Github
+03-Comandos basicos en Github
+04-Manejo de raices en los repositorios
+05-Flet y Flutter
+06-La utilidad de un Framework
+
+#Desarrollo de software
 001-AppSaludo
 002-AppSi/No
 003-Suma de 2 Numeros
@@ -26,6 +35,24 @@ Django para hacer sitios web con Python. React para construir interfaces de usua
 006-Calendario
 
 2do Parcial
+#Desarrollo de software
 007-Cajero Automatico
 008-El Mictlan
-009-Proyecto STEM Problematicas reales y la programación.
+
+#Presentación de los elementos claves de un proyecto STEM
+07-Proyecto STEM Previo a ABP:
+
+Temas a trabajar:
+a)Identidad nacional
+b)La musica como parte de mi
+c)Las matematicas y la programación
+d)Los ODS y la programación
+
+#Desarrollo de software
+0010-Consultorio
+0011-Areas y Diametros
+
+07-Revisión de avances ABP
+
+
+
