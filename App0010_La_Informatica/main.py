@@ -4,7 +4,7 @@ from flet import AppBar, ElevatedButton, View
 def main(page: ft.Page):
     page.title = "La historia de la Informática"
     page.bgcolor = "#61A707"
-    page.window_width = 600
+    page.window_width = 650
     page.window_height = 800
     
     image_width_Portada = 800
@@ -15,47 +15,68 @@ def main(page: ft.Page):
     border_radius = 25  # Ajusta el valor para el radio del borde
 
     # Audios Padres de la informática
-    intro = ft.Audio(src="https://www.cjoint.com/doc/24_07/NGBfGGjADDI_Intro.mp3", volume=1, balance=0)
+    intro = ft.Audio(src="Intro.mp3", volume=1, balance=0)
     page.overlay.append(intro)
     
-    Pascal = ft.Audio(src="https://www.cjoint.com/doc/24_07/NGBfJZz11xI_Pascal.mp3", volume=1, balance=0)
+    Pascal = ft.Audio(src="Pascal.mp3", volume=1, balance=0)
     page.overlay.append(Pascal)
     
-    Leibniz = ft.Audio(src="https://www.cjoint.com/doc/24_07/NGBfKTVab2I_Leibniz.mp3", volume=1, balance=0)
+    Leibniz = ft.Audio(src="Leibniz.mp3", volume=1, balance=0)
     page.overlay.append(Leibniz)
     
-    Babbage = ft.Audio(src="https://www.cjoint.com/doc/24_07/NGBfMr7C3HI_Babbage.mp3", volume=1, balance=0)
+    Babbage = ft.Audio(src="Babbage.mp3", volume=1, balance=0)
     page.overlay.append(Babbage)
     
-    Lovelace = ft.Audio(src="https://www.cjoint.com/doc/24_07/NGBfNjA4UFI_Lovelace.mp3", volume=1, balance=0) 
+    Lovelace = ft.Audio(src="Lovelace.mp3", volume=1, balance=0) 
     page.overlay.append(Lovelace)
     
-    Hollerith = ft.Audio(src="https://www.cjoint.com/doc/24_07/NGBfOoc01pI_Hollerith.mp3", volume=1, balance=0)
+    Hollerith = ft.Audio(src="Hollerith.mp3", volume=1, balance=0)
     page.overlay.append(Hollerith)
     
-    Turing = ft.Audio(src="https://www.cjoint.com/doc/24_07/NGBfPdcDftI_Turing.mp3", volume=1, balance=0)
+    Turing = ft.Audio(src="Turing.mp3", volume=1, balance=0)
     page.overlay.append(Turing)
     
-    Neumann = ft.Audio(src="https://www.cjoint.com/doc/24_07/NGBfPWII3cI_Neumann.mp3", volume=1, balance=0)
+    Neumann = ft.Audio(src="Neumann.mp3", volume=1, balance=0)
     page.overlay.append(Neumann)
     
-    Shannon = ft.Audio(src="https://www.cjoint.com/doc/24_07/NGBfQBo7UHI_shannon.mp3", volume=1, balance=0)
+    Shannon = ft.Audio(src="shannon.mp3", volume=1, balance=0)
     page.overlay.append(Shannon)
     
-    Hopper = ft.Audio(src="https://www.cjoint.com/doc/24_07/NGBgtfMPOsI_Hopper.mp3", volume=1, balance=0)
+    Hopper = ft.Audio(src="Hopper.mp3", volume=1, balance=0)
     page.overlay.append(Hopper)
     
-    McCarthy = ft.Audio(src="https://www.cjoint.com/doc/24_07/NGBguVcv8UI_McCarthy.mp3", volume=1, balance=0)
+    McCarthy = ft.Audio(src="McCarthy.mp3", volume=1, balance=0)
     page.overlay.append(McCarthy)
     
-    Berners = ft.Audio(src="https://www.cjoint.com/doc/24_07/NGBgvOvlxPI_Berners.mp3", volume=1, balance=0)
+    Berners = ft.Audio(src="Berners.mp3", volume=1, balance=0)
     page.overlay.append(Berners)
     
-    Ritchie = ft.Audio(src="https://www.cjoint.com/doc/24_07/NGBgwRudXlI_Ritchie.mp3", volume=1, balance=0)
+    Ritchie = ft.Audio(src="Ritchie.mp3", volume=1, balance=0)
     page.overlay.append(Ritchie)
     
-    Thompson = ft.Audio(src="https://www.cjoint.com/doc/24_07/NGBgxsJkaHI_Thompson.mp3", volume=1, balance=0)
+    Thompson = ft.Audio(src="Thompson.mp3", volume=1, balance=0)
     page.overlay.append(Thompson)
+    
+    Gosling = ft.Audio(src="Gosling.mp3", volume=1, balance=0)
+    page.overlay.append(Gosling)
+    
+    Jobs = ft.Audio(src="Jobs.mp3", volume=1, balance=0)
+    page.overlay.append(Jobs)
+    
+    Wozniak= ft.Audio(src="Wozniak.mp3", volume=1, balance=0)
+    page.overlay.append(Wozniak)
+    
+    Gates = ft.Audio(src="Gates.mp3", volume=1, balance=0)
+    page.overlay.append(Gates)
+    
+    Zuckerberg = ft.Audio(src="Zuckerberg.mp3", volume=1, balance=0)
+    page.overlay.append(Zuckerberg)
+    
+    Pages = ft.Audio(src="Pages.mp3", volume=1, balance=0)
+    page.overlay.append(Pages)
+    
+    Brin = ft.Audio(src="Brin.mp3", volume=1, balance=0)
+    page.overlay.append(Brin)
     
     def StopAll():
         intro.pause()
@@ -72,6 +93,13 @@ def main(page: ft.Page):
         Berners.pause()
         Ritchie.pause()
         Thompson.pause()
+        Gosling.pause()
+        Jobs.pause()
+        Wozniak.pause()
+        Gates.pause()
+        Zuckerberg.pause()
+        Pages.pause()
+        Brin.pause()
     
     def play_intro(e):
         StopAll()
@@ -128,22 +156,57 @@ def main(page: ft.Page):
     def play_thompson(e):
         StopAll()
         Thompson.play()
+        
+    def play_gosling(e):
+        StopAll()
+        Gosling.play()
+        
+    def play_jobs(e):
+        StopAll()
+        Jobs.play()
+        
+    def play_wozniak(e):
+        StopAll()
+        Wozniak.play()
+        
+    def play_gates(e):
+        StopAll()
+        Gates.play()
+    
+    def play_zuckerberg(e):
+        StopAll()
+        Zuckerberg.play()
+    
+    def play_pages(e):
+        StopAll()
+        Pages.play()
+    
+    def play_brin(e):
+        StopAll()
+        Brin.play()
+        
     
     # Botones Padres de la informática con imágenes y etiquetas semánticas
-    btn1 = ElevatedButton(content=ft.Image(src="https://i.ibb.co/KLfpNp6/Pascal.jpg", width=img_width, height=img_height, border_radius=border_radius, semantics_label="Blaise Pascal"), on_click=play_pascal)
-    btn2 = ElevatedButton(content=ft.Image(src="https://i.ibb.co/3mzXZdJ/Leibniz.png", width=img_width, height=img_height, border_radius=border_radius, semantics_label="Gottfried Wilhelm Leibniz"), on_click=play_leibniz)
-    btn3 = ElevatedButton(content=ft.Image(src="https://i.ibb.co/xJTTN0J/babbage.png", width=img_width, height=img_height, border_radius=border_radius, semantics_label="Charles Babbage"), on_click=play_babbage)
-    btn4 = ElevatedButton(content=ft.Image(src="https://i.ibb.co/M5C7RbL/Lovelace.png", width=img_width, height=img_height, border_radius=border_radius, semantics_label="Ada Lovelace"), on_click=play_lovelace)
-    btn5 = ElevatedButton(content=ft.Image(src="https://i.ibb.co/D4GcPHc/Hollerith.png", width=img_width, height=img_height, border_radius=border_radius, semantics_label="Herman Hollerith"), on_click=play_hollerith)
-    btn6 = ElevatedButton(content=ft.Image(src="https://i.ibb.co/wg64Dtg/Turing.jpg", width=img_width, height=img_height, border_radius=border_radius, semantics_label="Alan Turing"), on_click=play_turing)
-    btn7 = ElevatedButton(content=ft.Image(src="https://i.ibb.co/8KfHtW5/Neumann.jpg", width=img_width, height=img_height, border_radius=border_radius, semantics_label="John von Neumann"), on_click=play_neumann)
-    btn8 = ElevatedButton(content=ft.Image(src="https://i.ibb.co/9czpKGz/shannon.png", width=img_width, height=img_height, border_radius=border_radius, semantics_label="Claude Shannon"), on_click=play_shannon)
-    btn9 = ElevatedButton(content=ft.Image(src="https://i.ibb.co/CQzWzHc/Hopper.png", width=img_width, height=img_height, border_radius=border_radius, semantics_label="Grace Hopper"), on_click=play_hopper)
-    btn10 = ElevatedButton(content=ft.Image(src="https://i.ibb.co/n8G0fXW/McCarthy.jpg", width=img_width, height=img_height, border_radius=border_radius, semantics_label="John McCarthy"), on_click=play_mccarthy)
-    btn11 = ElevatedButton(content=ft.Image(src="https://i.ibb.co/FHKr3fp/Berners.jpg", width=img_width, height=img_height, border_radius=border_radius, semantics_label="Tim Berners-Lee"), on_click=play_berners)
-    btn12 = ElevatedButton(content=ft.Image(src="https://i.ibb.co/f1w44RH/Ritchie.png", width=img_width, height=img_height, border_radius=border_radius, semantics_label="Dennis Ritchie"), on_click=play_ritchie)
-    btn13 = ElevatedButton(content=ft.Image(src="https://i.ibb.co/Ny027s8/Thompson.jpg", width=img_width, height=img_height, border_radius=border_radius, semantics_label="Ken Thompson"), on_click=play_thompson)
-    
+    btn1 = ElevatedButton(content=ft.Image(src="Pascal.jpeg", width=img_width, height=img_height, border_radius=border_radius, semantics_label="Blaise Pascal"), on_click=play_pascal)
+    btn2 = ElevatedButton(content=ft.Image(src="Leibniz.png", width=img_width, height=img_height, border_radius=border_radius, semantics_label="Gottfried Wilhelm Leibniz"), on_click=play_leibniz)
+    btn3 = ElevatedButton(content=ft.Image(src="babbage.png", width=img_width, height=img_height, border_radius=border_radius, semantics_label="Charles Babbage"), on_click=play_babbage)
+    btn4 = ElevatedButton(content=ft.Image(src="Lovelace.png", width=img_width, height=img_height, border_radius=border_radius, semantics_label="Ada Lovelace"), on_click=play_lovelace)
+    btn5 = ElevatedButton(content=ft.Image(src="Hollerith.png", width=img_width, height=img_height, border_radius=border_radius, semantics_label="Herman Hollerith"), on_click=play_hollerith)
+    btn6 = ElevatedButton(content=ft.Image(src="Turing.jpeg", width=img_width, height=img_height, border_radius=border_radius, semantics_label="Alan Turing"), on_click=play_turing)
+    btn7 = ElevatedButton(content=ft.Image(src="Neumann.jpeg", width=img_width, height=img_height, border_radius=border_radius, semantics_label="John von Neumann"), on_click=play_neumann)
+    btn8 = ElevatedButton(content=ft.Image(src="shannon.png", width=img_width, height=img_height, border_radius=border_radius, semantics_label="Claude Shannon"), on_click=play_shannon)
+    btn9 = ElevatedButton(content=ft.Image(src="Hopper.png", width=img_width, height=img_height, border_radius=border_radius, semantics_label="Grace Hopper"), on_click=play_hopper)
+    btn10 = ElevatedButton(content=ft.Image(src="McCarthy.jpeg", width=img_width, height=img_height, border_radius=border_radius, semantics_label="John McCarthy"), on_click=play_mccarthy)
+    btn11 = ElevatedButton(content=ft.Image(src="Berners.jpeg", width=img_width, height=img_height, border_radius=border_radius, semantics_label="Tim Berners-Lee"), on_click=play_berners)
+    btn12 = ElevatedButton(content=ft.Image(src="Ritchie.png", width=img_width, height=img_height, border_radius=border_radius, semantics_label="Dennis Ritchie"), on_click=play_ritchie)
+    btn13 = ElevatedButton(content=ft.Image(src="Thompson.jpeg", width=img_width, height=img_height, border_radius=border_radius, semantics_label="Ken Thompson"), on_click=play_thompson)
+    btn14= ElevatedButton(content=ft.Image(src="Gosling.jpeg", width=img_width, height=img_height, border_radius=border_radius, semantics_label="James Gosling"), on_click=play_gosling)
+    btn15 = ElevatedButton(content=ft.Image(src="Jobs.jpg", width=img_width, height=img_height, border_radius=border_radius, semantics_label="Steve Jobs"), on_click=play_jobs)
+    btn16 = ElevatedButton(content=ft.Image(src="Wozniak.jpg", width=img_width, height=img_height, border_radius=border_radius, semantics_label="Steve Wozniak"), on_click=play_wozniak)
+    btn17 = ElevatedButton(content=ft.Image(src="Gates.jpeg", width=img_width, height=img_height, border_radius=border_radius, semantics_label="Bill Gates"), on_click=play_gates)
+    btn18 = ElevatedButton(content=ft.Image(src="Zuckerberg.webp", width=img_width, height=img_height, border_radius=border_radius, semantics_label="Mark Zuckerberg"), on_click=play_zuckerberg)
+    btn19 = ElevatedButton(content=ft.Image(src="Pages.jpg", width=img_width, height=img_height, border_radius=border_radius, semantics_label="Larry Page"), on_click=play_pages)
+    btn20 = ElevatedButton(content=ft.Image(src="Brin.webp", width=img_width, height=img_height, border_radius=border_radius, semantics_label="Sergey Brin"), on_click=play_brin)
     # Manejo del cambio de ruta
     def route_change(route):
         # Limpia las vistas anteriores
@@ -167,7 +230,7 @@ def main(page: ft.Page):
                                         on_click=lambda _: [StopAll(), page.go('/padres')]
                                     ),
                                     ft.Image(
-                                        src="https://i.ibb.co/drsZbKM/Portada.png",
+                                        src="Portada.png",
                                         width=image_width_Portada,
                                         height=image_height_Portada,
                                         fit="cover"
@@ -207,31 +270,31 @@ def main(page: ft.Page):
                                     ft.Row(
                                         alignment="center",
                                         controls=[
-                                            btn1, btn2, btn3
+                                            btn1, btn2, btn3,btn4
                                         ]
                                     ),
                                     ft.Row(
                                       alignment="center",
                                       controls=[
-                                        btn4, btn5, btn6
+                                        btn5, btn6, btn7,btn8
                                       ]  
                                     ),
                                     ft.Row(
                                        alignment="center",
                                         controls=[
-                                          btn7, btn8, btn9
+                                          btn9, btn10, btn11,btn12
                                         ] 
                                     ),
                                     ft.Row(
                                         alignment="center",
                                         controls=[
-                                          btn10, btn11, btn12
+                                          btn13,btn14,btn15,btn16
                                         ] 
                                     ),
                                     ft.Row(
                                         alignment="center",
                                         controls=[
-                                          btn13
+                                          btn17,btn18,btn19,btn20
                                         ] 
                                     ),
                                      ElevatedButton(
@@ -285,4 +348,5 @@ def main(page: ft.Page):
     page.on_route_change = route_change
     page.go(page.route)
 
-ft.app(target=main, assets_dir="assets")
+#ft.app(target=main, assets_dir="assets")
+ft.app(target=main,view=ft.WEB_BROWSER, assets_dir="assets")
